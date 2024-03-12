@@ -30,3 +30,7 @@ responseHeaders:
     headerKey: Access-Control-Allow-Origin
     headerValues:
       - "*"
+  - pathPattern: ^modules/analytics.*
+    headerKey: Access-Control-Allow-Origin
+    headerValues:
+      - "*"
