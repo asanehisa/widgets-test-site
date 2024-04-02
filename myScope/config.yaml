@@ -1,5 +1,5 @@
 buildConfiguration:
-  buildCommand: npm run build
+  buildCommand: npx pages build --scope myScope
   installDependenciesStep:
     command: npm install
     requiredFiles:
@@ -8,9 +8,10 @@ buildConfiguration:
       - .npmrc
 livePreviewConfiguration:
   setupCommand: ":"
+assetsDir: subdirectory/assets
 # The ^modules/ header allows access to your modules from other sites
 responseHeaders:
-  - pathPattern: ^modules/ugh.*
+  - pathPattern: ^modules/myScope/test.*
     headerKey: Access-Control-Allow-Origin
     headerValues:
       - "*"
