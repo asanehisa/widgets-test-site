@@ -7,8 +7,8 @@
   "type": "module",
   "scripts": {
     "dev": "pages dev",
-    "prod": "pages prod",
-    "build": "pages build"
+    "prod": "printenv && pages prod",
+    "build": "printenv && pages build"
   },
   "engines": {
     "node": "^18.4.0 || >=20.0.0"
