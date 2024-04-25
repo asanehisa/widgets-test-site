@@ -1,4 +1,4 @@
-import Test from "/src/assets/svgs/test.svg";
+import Test from "/src/assets/svgs/large.svg";
 
 export const SimpleJSX = () => {
   return (
